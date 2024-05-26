@@ -17,6 +17,7 @@
     "react": "^18.3.1",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.3.1",
+    "robot-test-methods": "^1.0.0",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {

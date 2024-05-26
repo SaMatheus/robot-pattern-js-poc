@@ -1,16 +1,11 @@
-import { screen, fireEvent } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import { expect } from '@jest/globals';
+import setup from 'robot-test-methods';
 
-export const __ROBOT_NAME__ = {
-  interactWithElement: (elementText) => {
-    const element = screen.getByText(elementText);
-    fireEvent.click(element);
-  },
-  fillInput: (placeholderText, value) => {
-    const input = screen.getByPlaceholderText(placeholderText);
-    fireEvent.change(input, { target: { value } });
-  },
-  clickButton: (buttonText) => {
-    const button = screen.getByText(buttonText);
-    fireEvent.click(button);
-  },
-};
+const __ROBOT_NAME__ = {
+  arrange: {},
+  action: {},
+  assert: {}
+}
+
+export default __ROBOT_NAME__;

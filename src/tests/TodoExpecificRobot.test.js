@@ -1,9 +1,11 @@
 import { describe, test, beforeEach } from '@jest/globals';
 import { render } from '@testing-library/react';
 import TodoBoard from '../components/TodoBoard';
-import { arrange, action, assert } from './robots/robotSetup';
+import todoBoardRobot from './robots/todoBoardRobot';
 
-describe.only('TodoBoard', () => {
+describe('TodoBoard', () => {
+  const { arrange, action, assert } = todoBoardRobot
+
   beforeEach(() => {
     localStorage.clear();
     render(<TodoBoard />);
