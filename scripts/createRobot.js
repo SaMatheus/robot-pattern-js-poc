@@ -1,15 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const templateConfig = process.argv[3] || 'without_config';
-const defaultTemplateName = 'robotTemplate_v1'
-
-const defineTemplate = {
-  without_config: `${defaultTemplateName}.js`,
-  variables: `${defaultTemplateName}-variables.js`,
-}
-
-const robotTemplate = fs.readFileSync(path.join('scripts', 'templates', defineTemplate[templateConfig]), 'utf8');
+const robotTemplate = fs.readFileSync(path.join('scripts', 'templates', 'robotTemplate_v1'), 'utf8');
 
 const createRobot = (robotName) => {
   const robotFileName = `${robotName}Robot.js`;
@@ -20,11 +12,7 @@ const createRobot = (robotName) => {
     return;
   }
 
-  const robotWithVariables = robotTemplate.replace(/__ROBOT_NAME_WITH_VARIABLES__/g , `${robotName}`)
-
-  templateConfig === 'variables'
-    ? fs.writeFileSync(robotFilePath, robotWithVariables)
-    : fs.writeFileSync(robotFilePath, robotTemplate);
+  fs.writeFileSync(robotFilePath, robotTemplate);
 
   console.log(`Robot ${robotFileName} created successfully.`);
 };
