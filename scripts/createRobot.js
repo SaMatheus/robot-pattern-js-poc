@@ -20,11 +20,12 @@ const createRobot = (robotName) => {
     return;
   }
 
-  const robotContent = templateConfig === 'variables'
-    ? robotTemplate.replace(/__ROBOT_NAME_WITH_VARIABLES__/g , `${robotName}Robot`)
-    : robotTemplate.replace(/__ROBOT_NAME__/g, `${robotName}Robot`);
+  const robotWithVariables = robotTemplate.replace(/__ROBOT_NAME_WITH_VARIABLES__/g , `${robotName}`)
 
-  fs.writeFileSync(robotFilePath, robotContent);
+  templateConfig === 'variables'
+    ? fs.writeFileSync(robotFilePath, robotWithVariables)
+    : fs.writeFileSync(robotFilePath, robotTemplate);
+
   console.log(`Robot ${robotFileName} created successfully.`);
 };
 

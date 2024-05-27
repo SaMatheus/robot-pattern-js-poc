@@ -13,11 +13,10 @@
   },
   "dependencies": {
     "date-fns": "^3.6.0",
-    "jsdom": "^24.0.0",
+    "jsdom": "^24.1.0",
     "react": "^18.3.1",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.3.1",
-    "robot-test-methods": "^1.0.0",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
@@ -27,17 +26,19 @@
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
-    "@types/react": "^18.3.2",
+    "@types/react": "^18.3.3",
     "@types/react-beautiful-dnd": "^13.1.8",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.3.0",
     "babel-jest": "^29.7.0",
-    "eslint": "^8.57.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "eslint": "^9.3.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "robot-test-methods": "^1.0.2",
     "vite": "^5.2.11"
   }
 }

@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 import { expect } from '@jest/globals';
-import setup from 'robot-test-methods/src/index';
+import setup from 'robot-test-methods';
 
 const todoBoardRobot = {
   arrange: {
