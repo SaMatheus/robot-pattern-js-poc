@@ -61,7 +61,7 @@ Contribuições são sempre bem-vindas. Se você encontrar algum problema ou tiv
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob a licença [MIT](https://choosealicense.com/licenses/mit/).
 
 ## Badges
 ![GitHub license](https://img.shields.io/github/license/samatheus/robot-pattern-js-poc)
